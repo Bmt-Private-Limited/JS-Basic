@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>short process to add style in JS</title>
+    <style>
+        #box1{
+            width: 500px; 
+            height: 400px;
+            opacity: 0;
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: 1s;
+            text-align: center;
+            line-height: 400px;
+            background-color: aqua;
+        }
+        .box2{
+            opacity: 1 !important;
+            transform: scaleX(1) !important;
+        }
+        .box3{
+            opacity: 0 !important;
+            transform: scaleX(0) !important;
+        }
+    </style>
+</head>
+<body>
+    <button class="show">SHOW</button>
+    <button class="hide">HIDE</button>
+    <div id="box1"></div>
+        <!-- <h1>Hello World</h1> -->
+    </div>
+
+
+    <script>
+        document.querySelector(".show").addEventListener("click",function () {
+            document.querySelector("#box1").setAttribute("class","box2")
+        })
+        document.querySelector(".hide").addEventListener("click",function () {
+            document.querySelector("#box1").setAttribute("class","box3")
+        })
+    </script>
+</body>
+</html>

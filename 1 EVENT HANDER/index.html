@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>state js</title>
+</head>
+<body>
+    <a href="#" onclick="alert('CHECKED!')">CLICK ME</a><br><br><br>
+    <a href="#" ondblclick="alert('DBL CHECKED!')">DBL CLICK ME</a><br><br><br>
+    <a href="#" onclick="prompt('Please enter your name', 'by default ste value')">CLICK ME</a><br><br><br>
+    <a href="#" onmouseover="alert('MOUSE-OVER')">MOUSE-OVER</a><br><br><br>
+    <a href="#" onmouseout="alert('MOUSE-OUT')">MOUSE-OUT</a><br><br><br>
+    <input type="text" placeholder="TYPE SOMETHING" onkeyup="alert(this.value);"><br><br><br>
+    <input type="text" placeholder="TYPE SOMETHING" onkeydown="alert(this.value);"><br><br><br> <!--SAME-->
+    <input type="text" placeholder="TYPE SOMETHING" onkeypress="alert(this.value);"><br><br><br> <!--SAME-->
+
+    <div id="demo">
+    </div><br><br><br>
+<!-- 
+ 
+    ****Common HTML Events****
+
+
+   *  onchange	An HTML element has been changed ---(specially use for select tag)
+
+    * onclick	The user clicks an HTML element ---(specially use for button/a tag)
+
+    * onmouseover	The user moves the mouse over an HTML element
+
+    * onmouseout	The user moves the mouse away from an HTML element
+
+    * onkeydown	The user pushes a keyboard key-----(specially use for input tag)
+
+    * onload	The browser has finished loading the page----(USE IN BODY TAG)
+
+    *prompt("Please enter your name", "Harry Potter"); -------(use for take input form users)
+ -->
+
+        
+    <div class="demo1">
+
+    </div><br><br><br>
+
+    <button onclick="myFunction()">Try it</button>
+
+    <p id="demo2"></p>
+
+
+    <script>
+        document.write("<h1 class='head'>WRITE BY JAVA-SCRIPT</h1>");
+        document.getElementById("demo").innerHTML="<h2>BMT</h2>";
+        document.getElementsByClassName("demo1")[0].innerHTML="<h2>APPPRONIC</h2>";
+        
+        function myFunction() {
+  var person = prompt("Please enter your name", "Harry Potter");
+  if (person != null) {
+    document.getElementById("demo2").innerHTML =
+    "Hello " + person + "! How are you today?";
+  }
+}
+
+/*
+ function promptClick() {
+            var person = prompt("WANNA KNOW MW BABY");
+            document.getElementById("prompt").innerHTML="HELLO " + person + " WHATS YOURS PLAN TODAY!!!!";
+
+*/
+    </script>
+</body>
+</html>

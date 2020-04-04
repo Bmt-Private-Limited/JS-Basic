@@ -1,0 +1,128 @@
+
+body{
+    background-color: cornsilk;
+}
+
+#nav{
+    width: 100%;
+    height: 50px;
+    background-color: black;
+}
+
+#one{
+    position: absolute;
+    top: 47px;
+    left: -9px;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition:1.5s
+    
+}
+#two{
+    position: absolute;
+    top: 47px;
+    left: 79px;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition:1.5s
+    
+}
+#three{
+    position: absolute;
+    top: 47px;
+    left: 178px;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition:1.5s
+    
+}
+#four{
+    position: absolute;
+    top: 45px;
+    left: 278px;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition:1.5s
+    
+}
+#five{
+    position: absolute;
+    top: 47px;
+    left: 370px;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition:1.5s
+    
+}
+#six{
+    position: absolute;
+    top: 45px;
+    left: 459px;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition:1.5s
+    
+}
+
+#seven{
+    position: absolute;
+    top: 47px;
+    left: 556px;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition:1.5s
+    
+}
+#eight{
+    position: absolute;
+    top: 47px;
+    left: 656px;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition:1.5s
+    
+}
+
+
+#nav ul li ul li{
+    float: none;
+    text-align: center;
+ }
+
+ #nav ul li{
+     transition: 1s;
+ }
+
+ #nav ul li:hover{
+     background-color: cyan;
+ }
+
+#navbar{
+    width: 891px;
+    margin: auto;
+    position: relative;
+}
+
+#navbar li{
+    list-style: none;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    float: left;
+    margin-right: 10px;
+    margin-top: 3px;
+    text-shadow: 0 0 20px black;
+    box-shadow: inset 0 0 20px #645c5c;
+    border: 2px solid #d3d308;
+    border-radius: 20px;
+}
+#hidemenu{
+    padding: 7px 20px;
+    text-shadow: 0 0 20px black;
+    border: 5px solid #9600fc;
+    border-radius: 15px;
+    box-shadow: inset -3px -4px 6px 0px black;
+    font-size: 20px;
+    font-family: fantasy;
+}
+

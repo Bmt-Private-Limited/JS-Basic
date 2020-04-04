@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Length Checking</title>
+</head>
+<body>
+    <form onsubmit="return false;" method="get" id="loginForm">
+    <input type="text" name="password" id="password"/>
+    <input type="submit" value="submit" id="submit"/>  
+    </form>
+    <h1 id="pwdErrorMsg"></h1>
+    <script>
+        document.querySelector("#loginForm").addEventListener("submit",function(){
+            var pwd = document.querySelector("#password").value;
+            if (pwd.length <=8 ) {
+                document.querySelector('#pwdErrorMsg').innerHTML="Your Password Should Be 8 Character"
+            } else {
+                document.querySelector('#pwdErrorMsg').innerHTML="You Have Selected A Strong Password"
+            }    
+        })   
+    </script>
+</body>
+</html>

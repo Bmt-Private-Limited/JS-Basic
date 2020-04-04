@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Bar Show And Hide</title>
+    <script src="https://kit.fontawesome.com/339bdb5343.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #menuBtn{
+            padding: 10px 15px;
+            font-size: 20px;
+            border-radius: 10px;
+            outline: none;
+            cursor: pointer;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+        #menu{
+            width: 200px;
+            height: 671px;
+            background-color: black;
+            color: white;
+            line-height: 50px;
+            transition: 1s;
+        }
+        .hide{
+            opacity: 0;
+            transform: scaleX(0);
+            transform-origin: left;
+        }
+        .show{
+            opacity: 1;
+            transform: scaleX(1);
+            transform-origin: left;
+        }
+    
+        #menu ul li{
+            list-style: none;
+            padding-left: 78px;
+        }
+    </style>
+</head>
+<body>
+    <button id="menuBtn"><i class="fas fa-bars"></i></button>
+    <div id="menu" class="hide">
+        <ul>
+            <li>HOME</li>
+            <li>SERVICE</li>
+            <li>CONTRACT</li>
+            <li>CATAGORIES</li>
+            <li>ABOUT</li>
+        </ul>
+    </div>
+
+    <script>
+
+        // PROCESS NO---1**********************
+
+        // document.querySelector("#menuBtn").addEventListener("click",function(){
+        //     if (document.querySelector(".show")) {
+        //         document.querySelector(".hide").classList.remove("show")
+        //     } else {
+        //         document.querySelector(".hide").classList.add("show")
+        //     }
+        // })
+
+        // PROCESS NO--2*********************************
+
+          document.querySelector("#menuBtn").addEventListener("click",function(){
+            document.querySelector(".hide").classList.toggle("show")
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Append-Propend-Add New Class,Id etc</title>
+</head>
+<body>
+    
+    <div id="demo">
+        <h1>
+            Hello World
+        </h1>
+    </div>
+
+    <script>
+       document.querySelector("#demo h1").prepend(innerHTML="Welcome");
+
+  //    prepend
+        document.querySelector("#demo").prepend(document.createElement("h2"));
+        document.querySelector("#demo h2").innerHTML="PREPEND"
+
+    //    append
+        document.querySelector("#demo").append(document.createElement("p"));
+        document.querySelector("#demo p").innerHTML="APPEND"
+
+  
+    // add new class
+        document.querySelector("#demo h1").classList.add("one");
+        document.querySelector("#demo h1").classList.add("two");
+        document.querySelector("#demo h1").className="three"; //remove all old classes and add declare class
+
+    // set attribute
+      
+       document.querySelector("#demo p").setAttribute("class","paragraph new-paragraph") //remove all old classes and add declare class
+
+
+    </script>
+</body>
+</html>

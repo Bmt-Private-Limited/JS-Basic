@@ -1,0 +1,126 @@
+#one{
+    width: 400px;
+    float: left;
+}
+#two{
+    width: 400px;
+    float: right;
+}
+
+
+div#box {
+    background: #00e8ff;
+    width: 300px;
+    text-align: center;
+    line-height: 200px;
+    border: 4px solid #0000004d;
+    margin: 40px;
+    box-shadow: inset 0 0 15px black;
+    font-size: 40px;
+    text-shadow: 0 0 20px black;
+    font-weight: 600;
+    color: white;
+    transition: 1s;
+    opacity: 0;
+}
+    button#show{
+        padding: 10px 20px;
+        background: black;
+        color: white;
+        box-shadow: inset 0 0 20px #beaaaa;
+        margin: 18px;
+    }
+
+    button#hide{
+        padding: 10px 20px;
+        background: black;
+        color: white;
+        box-shadow: inset 0 0 20px #beaaaa;
+        margin: 18px 0px 0 118px;
+    }
+
+
+    div#box1 {
+        background: #00e8ff;
+        width: 300px;
+        text-align: center;
+        line-height: 200px;
+        border: 4px solid #0000004d;
+        margin: 40px;
+        box-shadow: inset 0 0 15px black;
+        font-size: 40px;
+        text-shadow: 0 0 20px black;
+        font-weight: 600;
+        color: white;
+        transition: 1s;
+    }
+        button#show1{
+            padding: 10px 20px;
+            background: black;
+            color: white;
+            box-shadow: inset 0 0 20px #beaaaa;
+            margin: 18px;
+        }
+    
+        button#hide1{
+            padding: 10px 20px;
+            background: black;
+            color: white;
+            box-shadow: inset 0 0 20px #beaaaa;
+            margin: 18px 0px 0 118px;
+        }
+
+        #menubar{
+        width: 644px;
+        position: absolute;
+        top: 153px;
+        left: 453px;
+        transform: scaleY(0);
+        transform-origin: top;
+        transition: 1s;
+        }
+        #menubar a{
+            text-decoration: none;
+            padding: 10px 20px;
+            background: #cbdf22;
+            border: 5px solid black;
+        }
+
+        #menushow{
+        padding: 10px 20px;
+        background: black;
+        color: white;
+        box-shadow: inset 0 0 20px #beaaaa;
+        margin: 0 0 68px 249px;
+              }
+
+        #hidemenu{
+            padding: 10px 20px;
+            background: black;
+            color: white;
+            box-shadow: inset 0 0 20px #beaaaa;
+            margin: 0 0 68px 249px;
+            }
+
+            #menubtn{
+                position: absolute;
+                top: 67px;
+                left: 260px;
+            }
+
+
+.light{
+    position: absolute;
+    top: 215px;
+    left: 600px;
+}
+
+
+
+
+
+
+
+
+
+

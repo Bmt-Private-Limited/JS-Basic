@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password matched or not</title>
+</head>
+<body>
+    <input type="text" class="inputBox">
+    <br>
+    <div class="demo">
+        <h1></h1>
+    </div>
+
+    <script>
+        document.querySelector(".inputBox").addEventListener("keyup",function () {
+            var passwordPutByUser =document.querySelector(".inputBox").value;
+            var Password =1;
+
+            if (passwordPutByUser == Password) {
+                document.querySelector(".demo h1").innerHTML="password matched"
+            } else {
+                document.querySelector(".demo h1").innerHTML="password not matched"
+                            }
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic page</title>
+    <style>
+        #box{
+            width: 500px;
+            line-height: 400px;
+            background-color: aqua;
+            text-align: center;
+            margin: auto;
+            opacity: 0; 
+            transform: scaleY(0);
+            transform-origin: top;
+            transition: 1s;       
+        }
+        .button{
+            padding: 10px 20px;
+            outline: none;
+            margin-right: 10px;
+        }
+        .btn{
+            width: 230px;
+            height: 20px;
+            margin: auto;
+            margin-bottom: 50px;
+            margin-top: 60px; 
+           
+        }
+    </style>
+</head>
+<body onload="alert('Please Dont Reload The page During Your Working Time')">
+    <div class="btn">
+        <button id="signUp" class="button" onclick="singUp()">
+            LOG IN
+        </button>
+        <button id="logIn" class="button" onclick="logIn()">
+            LOG OUT
+        </button>
+    </div>
+    <div id="box">
+        <h1>HELLO WORLD</h1>
+    </div>
+
+    <script>
+        function singUp() {
+            var value = prompt("type something" , "1");
+            if (value == 1) {
+                document.getElementById("box").setAttribute("style", "transform:scaleY(1)  ; opacity:1");
+            } else {
+                alert("SORRY!!! We Have No Record About You.")
+            }
+        }
+        function logIn() {
+            alert("Are You Sure That You Want To Log Out");
+            document.getElementById("box").setAttribute("style", "transform:scaleY(0) ; opacity:0");
+        }
+    </script>
+</body>
+</html>

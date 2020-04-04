@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html
+><head>
+    <title>
+        EVENT LISTENER
+    </title>
+</head>
+<body onload="load()">
+
+<p>Select a new car from the list.</p>
+
+<select id="mySelect" onchange="myFunction()">
+  <option value="1">Audi</option>
+  <option value="2">BMW</option> <!--see the difference of value-->
+  <option value="Mercedes">Mercedes</option>
+  <option value="Volvo">Volvo</option><!--see the difference of value-->
+
+</select>
+
+<p id="demo" style="width: 594px;height: 50px; text-align: center; font-size: 40px;  transition:1s;"></p>
+
+<script>
+function load() {
+  alert("CLICK OK TO LOAD THE PAGE");
+}
+// document.getElementById("mySelect").addEventListener("onchange",function() {
+//   var x = document.getElementById("mySelect").value;
+//   alert("Hay Buddy:) Are You Want To Change Your Choice Now Into :- " + x) ;
+//   document.getElementById("demo").innerHTML = "You selected: " + x ;
+//   document.getElementById("demo").setAttribute("style" , "color:white; background:blue")
+  
+// }) //don't worked
+
+
+function myFunction() {
+  var x = document.getElementById("mySelect").value;
+  alert("Hay Buddy:) Are You Want To Change Your Choice Now Into :- " + x) ;
+  document.getElementById("demo").innerHTML = "You selected: " + x ;
+    // document.getElementById("demo").setAttribute("style" , "color:white; background:blue")
+
+  document.getElementById("demo").style.background="blue";
+  document.getElementById("demo").style.color="white";
+}
+
+</script>
+
+<!-- 
+ 
+    ****Common HTML Events****
+
+
+   *  onchange	An HTML element has been changed ---(specially use for select tag)
+
+    * onclick	The user clicks an HTML element ---(specially use for button/a tag)
+
+    * onmouseover	The user moves the mouse over an HTML element
+
+    * onmouseout	The user moves the mouse away from an HTML element
+
+    * onkeydown	The user pushes a keyboard key-----(specially use for input tag)
+
+    * onload	The browser has finished loading the page
+ -->
+</body>
+</html>
+
